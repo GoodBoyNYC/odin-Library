@@ -1,8 +1,17 @@
 const myLibrary = [];
+const btnNewBook = document.querySelector(".btnBook");
+const dialog = document.querySelector("dialog"); 
+
+// "Show the dialog" button opens the dialog modally
+btnNewBook.addEventListener("click", () => {
+    console.log("Ok");
+  dialog.showModal();
+});
+
 
 function Book() {
-    author: 'Name';
     title: 'Book Name';
+    author: 'Name';
     pages: 0;
     read: false;
 };

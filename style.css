@@ -2,16 +2,16 @@ body {
     display: grid;
 }
 .container {
-    resize: both;
-    overflow: auto;
-    display: grid;
-    gap: 4px;
-    padding: 4px;
-    border: 1px solid grey;
-    background-color: skyblue;
-    grid-template-rows: repeat(5, 150px);
-    grid-template-columns: repeat(3, 150px);
-  }
+  resize: both;
+  overflow: auto;
+  display: grid;
+  gap: 4px;
+  padding: 4px;
+  border: 1px solid grey;
+  background-color: skyblue;
+  grid-template-rows: repeat(2, clamp(150px, 35%, 400px));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
   
   .book{
     background-color: #444;
